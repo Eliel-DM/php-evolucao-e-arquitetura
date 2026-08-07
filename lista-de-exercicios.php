@@ -39,11 +39,19 @@ operacaoMatematicaPersonalizada("multiplicacao", 100, 10);
 
 // Exercício 02
 // Essa aqui vou fazer com o echo sendo enviado de fora da função
-
 function calcularIMC(float $peso, float $altura): float {
     $imc = $peso / ($altura * $altura);
     return $imc;
 }
-
 $imcCalculado = calcularIMC(85, 1.78);
 echo "O IMC calculado é: " . $imcCalculado . "\n";
+
+//Exercício 03 
+// Fórmula de Cº para Fah -> (0ºc * 1.8) + 32 
+function converterCelsiusParaFahrenheit(float $valorEmCelsius): float {
+    $valorConvertido = ($valorEmCelsius * 1.8) + 32;
+    return $valorConvertido;
+}
+
+$valorEmFah = converterCelsiusParaFahrenheit(0);
+echo " O valor convertido é: $valorEmFah";
